@@ -20,7 +20,6 @@ jobs:
           repo: ${{ github.event.repository.name }}
           issue_number: ${{ github.event.issue.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          replace: true
           output: './'
       - name: Commit report
         run: |
